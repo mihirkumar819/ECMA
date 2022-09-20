@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var hero={
+            title:"batman",
+            firstname:"Mihir",
+            lastname:"kumar",
+            city:"Bangalore",
+            power:7
+        };
+        // var{title:herotitle,power:heropower,firstname:herofirstname,lastname:herolastname}=hero;
+        // console.log(herotitle);
+        // herotitle="Vijay";
+        // console.log(herotitle);
+        // console.log(hero.title);
+
+        // var herotitle=hero.title;
+        // herotitle="valtech";
+        // console.log(herotitle)
+        // console.log(hero.title);
+
+        // var{title,firstname,lastname,city,power}=hero;
+        // function getFavheros(){
+        //     return ['mihir','archies','kumar','Bangalore',90]
+        // };
+        // var[title,firstname,lastname,city,power]=getFavheros();
+        // console.log(title);
+        // console.log(power);
+
+    var allVals1={...hero}
+    console.log(allVals1.title);
+    allVals1.title='Mihir';
+    console.log(allVals1.title);
+
+     // ****   Using JSON Method ******  //
+    // var val=JSON.parse(JSON.stringify(hero));
+    // console.log(val.title);
+    // val.city='Patna';
+    // console.log(val.city);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

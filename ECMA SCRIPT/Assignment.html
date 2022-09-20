@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cart={
+            getcostprice:function(){
+                return 100;
+            },
+
+        
+        //  getsellingprice:function(){
+        //    // var scope=this;
+        //    var calculateprofit=function(scope){
+        //        return scope.getcostprice()*0.2;
+        //     }
+        //     return this.getcostprice()+ calculateprofit(this);
+        //     //call(this)  
+        //  }
+
+
+        //bind(this())
+        //  getsellingprice:function(){
+        //    var calculateprofit=function(){
+        //        return this.getcostprice()*0.2;
+        //     }
+        //     return this.getcostprice()+calculateprofit.bind(this)();
+        //     //call(this)  
+        //  }
+
+        getsellingprice:function(){
+           var calculateprofit=function(){
+               return this.getcostprice()*0.2;
+            }
+            return this.getcostprice()+calculateprofit.call(this);
+            //call(this)  
+         }
+
+
+        // getsellingprice:function(){
+        //     var calculateprofit=()=>this.getcostprice()*0.2;
+        //     return this.getcostprice()+calculateprofit();
+        // }
+
+
+        };
+
+
+        
+        console.log(cart.getsellingprice());
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
